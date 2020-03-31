@@ -2,7 +2,7 @@
 
 echo "Enter Email address"
 read email
-emailpat="@[0-9a-zA-Z]";
+emailpat="[.][a-zA-Z]{2,4}";
 if `[[ $email =~ $emailpat ]]`
 then
 	echo "Valid email address"
